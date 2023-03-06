@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import RoomAndUsersColumn from './room-and-users'; // Add this
+import RoomAndUsersColumn from './room-and-users';
 import SendMessage from './send-message';
 import MessagesReceived from './messages';
 
