@@ -17,13 +17,13 @@ const Home = ({ username, setUsername, room, setRoom, socket }) => {
                 <h1>{`Добро пожаловать!`}</h1>
                 <input
                     className={styles.input}
-                    placeholder='Enter login here'
+                    placeholder='Введите ваш логин'
                     onChange={(e) => setUsername(e.target.value)}/>
 
                 <select
                     className={styles.input}
                     onChange={(e) => setRoom(e.target.value)}>
-                    <option>-- Select Room --</option>
+                    <option>Выберите комнату</option>
                     <option value='test1'>test1</option>
                     <option value='test2'>test2</option>
                     <option value='test3'>test3</option>
@@ -34,7 +34,7 @@ const Home = ({ username, setUsername, room, setRoom, socket }) => {
                     className='btn btn-secondary'
                     style={{ width: '100%' }}
                     onClick={joinRoom}
-                        >Join Room</button>
+                        >Войти</button>
             </div>
         </div>
     );
